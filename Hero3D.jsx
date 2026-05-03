@@ -63,7 +63,7 @@ const Hero3D = ({ title, axis = 'y', zoom = 2.2 }) => {
 
     const loader = new THREE.GLTFLoader();
     loader.load(
-      '../../head2.glb',
+      '../../assets/head2.glb',
       gltf => {
         model = gltf.scene;
         const box = new THREE.Box3().setFromObject(model);
